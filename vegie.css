@@ -1,0 +1,51 @@
+html {
+	height: 100%;
+}
+
+body {
+background-image: url("bg1.jpg");
+	margin: 0;
+;
+  padding-top: 54px;
+}
+
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+
+
+.#outer-container {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+#sidebar {
+	display: table-cell;
+	width: 15%;
+	vertical-align: top;
+}
+
+#content {
+	display: table-cell;
+	width: 85%;
+	vertical-align: top;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid 	grey;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #90EE90;
+}

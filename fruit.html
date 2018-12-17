@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Fruits</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="fruit.css" rel="stylesheet">
+    <style media="screen">
+    .logo{
+      display: block;
+      margin-right: auto;
+      height: 120px;
+      width: 120px;
+      padding-top: 0;
+      margin: 0;
+    }
+
+    .navbar{
+    background-color: #ccffcc !important;
+    }
+
+    .nav-item a{
+      color: #004d4d !important;
+    }
+
+    nav{
+      border-bottom-left-radius: 50px;
+    }
+    nav ul {
+      list-style: none;
+      text-align: center;
+    }
+
+    nav ul li a {
+      font-weight: 500;
+      font-size: 15px;
+      text-transform: uppercase;
+      /* margin: 0; */
+    }
+    nav ul li a,
+    nav ul li a:after,
+    nav ul li a:before {
+      transition: all .5s;
+    }
+    nav ul li a:hover {
+      color: #004d4d;
+    }
+
+    nav.stroke ul li a {
+      position: relative;
+    }
+    nav.stroke ul li a:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0%;
+      content: '.';
+      color: transparent;
+      background: #004d4d;
+      height: 1px;
+    }
+    nav.stroke ul li a:hover:after {
+      width: 100%;
+      height: 2px;
+    }
+
+    div#footer { width: 100%;
+      height: 350px;
+      /* background: #eee;  */
+      background: #ccffcc !important;
+      padding: 40px;
+      padding-bottom: 0 !important;}
+      .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+    </style>
+
+  </head>
+
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark stroke">
+        <a href="index.html"><img src="logo diet.png" alt="img" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="about-us.html">About Us <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <!-- <a class="nav-link" href="MyDiet.html">MyDiet</a> -->
+              <div class="dropdown">
+
+              <a href="MyDiet.html"  class=" nav-link dropbtn">MYDIET</a>
+              <div class="dropdown-content">
+              <a href="fruit.html">FRUITS</a>
+              <a href="vegie.html">VEGETABLES</a>
+              <a href="proteinnew.html">PROTEIN</a>
+              <a href="oil.html">OILS</a>
+              <a href="dairy.html">DAIRY</a>
+              <a href="grain.html">GRAINS</a>
+            </div>
+          </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="online_tool2.html">Online tools</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="popular.html">popular topics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ContactUs.html">contact us</a>
+            </li>
+
+          </ul>
+          <form class="form-inline mt-2 mt-md-0" >
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="background-color: #004d4d; border: 2px solid #004d4d; border-radius: 4px;color: white;">Search</button>
+          </form>
+        </div>
+      </nav>
+
+    </header>
+
+<br><br><br><br>
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-3">
+          <h1 class="my-4">HEALTHY FOODS</h1>
+          <div class="list-group">
+            <a href="fruit.html" class="list-group-item active">FRUIT</a>
+            <a href="vegie.html" class="list-group-item">VEGETABLES</a>
+            <a href="proteinnew.html" class="list-group-item">PROTEIN</a>
+            <a href="oil.html" class="list-group-item">OILS</a>
+            <a href="dairy.html" class="list-group-item">DAIRY</a>
+              <a href="grain.html" class="list-group-item">GRAINS</a>
+          </div>
+        </div>
+        <!-- /.col-lg-3 -->
+
+        <div class="col-lg-9">
+
+          <div class="card mt-4">
+            <img class="card-img-top img-fluid" src="fruit1.jpg" alt="">
+            <div class="card-body">
+              <h3 class="card-title">What foods are in the Fruit Group?</h3>
+
+
+              <p class="card-text">Any fruit or 100% fruit juice counts as part of the Fruit Group. Fruits may be fresh, canned, frozen, or dried, and may be whole, cut-up, or pureed
+ </p>
+
+            </div>
+          </div>
+          <!-- /.card -->
+
+          <div class="card card-outline-secondary my-4">
+            <div class="card-header">
+              How much fruit is needed daily?
+
+            </div>
+            <div class="card-body">
+              <p>  The amount of fruit you need to eat depends on age, sex, and level of physical activity. Recommended daily amounts are shown in the table below.</p>
+
+<div class="content">
+  <div class="container">
+    <table border="1" cellpadding="1" cellspacing="1" class="collapsible collapsed" style="width: 95%;">
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="3" scope="col" style="text-align: justify;">Daily Fruit TABLE</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th colspan="3" scope="col" style="text-align: left;">Daily Recommendation*</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr></tr>
+                                                        <tr>
+                                                            <th rowspan="2" scope="row" style="vertical-align: top;">Children</th>
+                                                            <td>2-3 years old</td>
+                                                            <td>1 cup</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4-8 years old</td>
+                                                            <td>1 to 1 ½ cups</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th rowspan="2" scope="row" style="vertical-align: top;">Girls</th>
+                                                            <td>9-13 years old</td>
+                                                            <td>1 ½ cups</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>14-18 years old</td>
+                                                            <td>1 ½ cups</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th rowspan="2" scope="row" style="vertical-align: top;">Boys</th>
+                                                            <td>9-13 years old</td>
+                                                            <td>1 ½ cups</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>14-18 years old</td>
+                                                            <td>2 cups</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th rowspan="3" scope="row" style="vertical-align: top;">Women</th>
+                                                            <td>19-30 years old</td>
+                                                            <td>2 cups</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>31-50 years old</td>
+                                                            <td>1 ½ cups</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>51+ years old</td>
+                                                            <td>1 ½ cups</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th rowspan="3" scope="row" style="vertical-align: top;">Men</th>
+                                                            <td>19-30 years old</td>
+                                                            <td>2 cups</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>31-50 years old</td>
+                                                            <td>2 cups</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>51+ years old</td>
+                                                            <td>2 cups</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    *These amounts are appropriate for individuals who get less than 30 minutes per &nbsp;<span style="font-size: 13.0080003738403px; line-height: 1.538em;">day of moderate physical activity, beyond normal daily activities. Those who are &nbsp;</span>
+                                                    <span style="font-size: 13.0080003738403px; line-height: 1.538em;">more physically active may be able to consume more while staying within calorie &nbsp;</span>
+                                                    <span style="font-size: 13.0080003738403px; line-height: 1.538em;">needs.</span>
+                                                    <br>&nbsp;
+                                                </div>
+                                            </div>
+                                            <h2>
+                                                <a name="countsfruit"></a>
+                                                What counts as a cup of fruit?
+                                            </h2>
+                                            <div>&nbsp;</div>
+                                            <div>
+                                                In general, 1 cup of fruit or 100% fruit juice, or ½ cup of dried fruit can be considered as 1 cup from the Fruit Group. This table below shows specific amounts that count as 1 cup of fruit (in some cases equivalents for ½ cup are also shown) towards your daily recommended intake.<br>
+                                                <br>Note: Click on the top row to expand the table. If you are on a mobile device, you may need to turn your phone to see the full table.
+                                            </div>
+                                            <div>&nbsp;</div>
+                                            <div>&nbsp;</div>
+                                            <div class="swipe" style="color: grey">Swipe to see the full table.&nbsp;false</div>
+                                            <div height="100px" overflow-x="auto">&nbsp;</div>
+                                            <div style="overflow-x: auto;">
+                                                <table border="1" cellpadding="1" cellspacing="1" class="collapsible collapsed" style="width: 95%;">
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="3" scope="col" style="text-align: justify;">cup of fruit TABLE</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="col">&nbsp;</th>
+                                                            <th scope="col">Amount that counts as 1 cup of fruit</th>
+                                                            <th scope="col">Other amounts (count as 1/2 cup of fruit unless noted)</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Apple</td>
+                                                            <td>
+                                                                <p>½ large (3 ¼" diameter)</p>
+                                                                <p>1 small (2 ¼" diameter)</p>
+                                                                <p>1 cup, sliced or chopped, raw or cooked</p>
+                                                            </td>
+                                                            <td>½ cup, sliced or chopped, raw or cooked</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Applesauce</td>
+                                                            <td>1 cup</td>
+                                                            <td>1 snack container (4oz)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Banana</td>
+                                                            <td>
+                                                                <p>1 cup, sliced</p>
+                                                                <p>1 large (8" to 9" long)</p>
+                                                            </td>
+                                                            <td>1 small (less than 6" long)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Cantaloupe</td>
+                                                            <td>1 cup, diced or melon balls</td>
+                                                            <td>1 medium wedge (1/8 of a med. melon)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Grapes</td>
+                                                            <td>
+                                                                <p>1 cup, whole or cut-up</p>
+                                                                <p>32 seedless grapes</p>
+                                                            </td>
+                                                            <td>16 seedless grapes</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Grapefruit</td>
+                                                            <td>
+                                                                <p>1 medium (4" diameter)</p>
+                                                                <p>1 cup, sections</p>
+                                                            </td>
+                                                            <td>½ medium (4" diameter)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Mixed fruit (fruit cocktail)</td>
+                                                            <td>1 cup, diced or sliced, raw or canned, drained</td>
+                                                            <td>1 snack container (4 oz) drained = 3/8 cup</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Orange</td>
+                                                            <td>
+                                                                <p>1 large (3 1/16" diameter)</p>
+                                                                <p>1 cup, sections</p>
+                                                            </td>
+                                                            <td>1 small (2 3/8" diameter)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Orange, mandarin</td>
+                                                            <td>1 cup, canned, drained</td>
+                                                            <td>&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Peach</td>
+                                                            <td>
+                                                                <p>1 large (2 ¾" diameter)</p>
+                                                                <p>1 cup, sliced or diced, raw, cooked, or canned, drained</p>
+                                                                <p>2 halves, canned</p>
+                                                            </td>
+                                                            <td>
+                                                                <p>1 small (2" diameter)</p>
+                                                                <p>1 snack &nbsp;container (4 oz)&nbsp;drained = 3/8 cup</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Pear</td>
+                                                            <td>
+                                                                <p>1 medium pear (2 ½ per lb)</p>
+                                                                <p>1 cup, sliced or diced, raw cooked, or canned, drained</p>
+                                                            </td>
+                                                            <td>1 snack container (4 oz) drained = 3/8 cup</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Pineapple</td>
+                                                            <td>1 cup, chunks, sliced or crushed, raw, cooked or canned, drained</td>
+                                                            <td>1 snack container (4 oz) drained = 3/8 cup</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Plum</td>
+                                                            <td>
+                                                                <p>1 cup, sliced raw or cooked</p>
+                                                                <p>3 medium or 2 large plums</p>
+                                                            </td>
+                                                            <td>1 large plum</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Strawberries</td>
+                                                            <td>
+                                                                <p>About 8 large berries</p>
+                                                                <p>1 cup, whole, halved, or sliced, fresh or frozen</p>
+                                                            </td>
+                                                            <td>½ cup whole, halved, or sliced</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Watermelon</td>
+                                                            <td>
+                                                                <p>1 small (1" thick)</p>
+                                                                <p>1 cup, diced or balls</p>
+                                                            </td>
+                                                            <td>6 melon balls</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Dried fruit (raisins, prunes, apricots, etc.)</td>
+                                                            <td>
+                                                                <p>½ cup dried fruit</p>
+                                                            </td>
+                                                            <td>¼ cup dried fruit or 1 small box raisins (1 ½ oz)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>100% fruit juice (orange, apple, grape, grapefruit, etc.)</td>
+                                                            <td>1 cup</td>
+                                                            <td>½ cup</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <div id="footer">
+      <div class="row" >
+        <div class="col-12 col-md">
+          <img class="mb-2" src="logo diet.png" alt="" style="width:200px; height:200px;">
+          <small class="d-block mb-3 text-muted"></small>
+        </div>
+        <div class="col-6 col-md">
+          <h5><a href="about-us.html">About Us</a></h5>
+          <ul class="list-unstyled text-small">
+            <li>Our Background</li>
+            <li>Services</li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5><a href="MyDiet.html">MyDiet</a></h5>
+          <ul class="list-unstyled text-small">
+            <li>Food Pyramid Information</li>
+            <li>Tips Diet</li>
+            <li>Tips Living Style</li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5><a href="online-tool2.html">Online tools</a></h5>
+          <ul class="list-unstyled text-small">
+            <li>BMI Calculator</li>
+            <li>Applications Suggestions</li>
+            <li>Websites Suggestions</li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5><a href="popular.html">Popular Topics</a></h5>
+          <ul class="list-unstyled text-small">
+            <li>Dietary Planning</li>
+            <li>Super Food</li>
+            <li>Do's & Dont's</li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5><a href="ContactUs.html">Contact Us</a></h5>
+        </div>
+      </div>
+      <p class="float-right"><a href="#">Back to top</a></p>
+      <p class="card-text">Copyrighted © 2018 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </div>
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

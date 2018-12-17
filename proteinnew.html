@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>protein</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="protein.css" rel="stylesheet">
+    <style media="screen">
+    .logo{
+      display: block;
+      margin-right: auto;
+      height: 120px;
+      width: 120px;
+      padding-top: 0;
+      margin: 0;
+    }
+
+    .navbar{
+    background-color: #ccffcc !important;
+    }
+
+    .nav-item a{
+      color: #004d4d !important;
+    }
+
+    nav{
+      border-bottom-left-radius: 50px;
+    }
+    nav ul {
+      list-style: none;
+      text-align: center;
+    }
+
+    nav ul li a {
+      font-weight: 500;
+      font-size: 15px;
+      text-transform: uppercase;
+      /* margin: 0; */
+    }
+    nav ul li a,
+    nav ul li a:after,
+    nav ul li a:before {
+      transition: all .5s;
+    }
+    nav ul li a:hover {
+      color: #004d4d;
+    }
+
+    nav.stroke ul li a {
+      position: relative;
+    }
+    nav.stroke ul li a:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0%;
+      content: '.';
+      color: transparent;
+      background: #004d4d;
+      height: 1px;
+    }
+    nav.stroke ul li a:hover:after {
+      width: 100%;
+      height: 2px;
+    }
+
+    div#footer { width: 100%;
+      height: 350px;
+      /* background: #eee;  */
+      background: #ccffcc !important;
+      padding: 40px;
+      padding-bottom: 0 !important;}
+
+      .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+    </style>
+
+  </head>
+
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark stroke">
+        <a href="index.html"><img src="logo diet.png" alt="img" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="about-us.html">About Us <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <!-- <a class="nav-link" href="MyDiet.html">MyDiet</a> -->
+              <div class="dropdown">
+
+              <a href="MyDiet.html"  class=" nav-link dropbtn">MYDIET</a>
+              <div class="dropdown-content">
+              <a href="fruit.html">FRUITS</a>
+              <a href="vegie.html">VEGETABLES</a>
+              <a href="proteinnew.html">PROTEIN</a>
+              <a href="oil.html">OILS</a>
+              <a href="dairy.html">DAIRY</a>
+              <a href="grain.html">GRAINS</a>
+            </div>
+          </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="online_tool2.html">Online tools</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="popular.html">popular topics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ContactUs.html">contact us</a>
+            </li>
+
+          </ul>
+          <form class="form-inline mt-2 mt-md-0" >
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="background-color: #004d4d; border: 2px solid #004d4d; border-radius: 4px;color: white;">Search</button>
+          </form>
+        </div>
+      </nav>
+
+    </header>
+
+<br><br><br><br>
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-3">
+          <h1 class="my-4">HEALTY FOODS</h1>
+          <div class="list-group">
+            <a href="fruit.html" class="list-group-item active">FRUIT</a>
+            <a href="vegie.html" class="list-group-item">VEGETABLES</a>
+            <a href="proteinnew.html" class="list-group-item">PROTEIN</a>
+            <a href="oil.html" class="list-group-item">OILS</a>
+            <a href="dairy.html" class="list-group-item">DAIRY</a>
+              <a href="grain.html" class="list-group-item">GRAINS</a>
+          </div>
+        </div>
+        <!-- /.col-lg-3 -->
+
+        <div class="col-lg-9">
+
+          <div class="card mt-4">
+            <img class="card-img-top img-fluid" src="protein.jpg" alt="">
+            <div class="card-body">
+              <h3 class="card-title">What foods are in the Protein Foods Group?</h3>
+
+              <p class="card-text">All foods made from meat, poultry, seafood, beans and peas, eggs, processed soy products, nuts, and seeds are considered part of the Protein Foods Group. Beans and peas are also part of the Vegetable Group. For more information on beans and peas, see Beans and Peas Are Unique Foods.
+Select a variety of protein foods to improve nutrient intake and health benefits, including at least 8 ounces of cooked seafood per week. Young children need less, depending on their age and calorie needs. The advice to consume seafood does not apply to vegetarians. Vegetarian options in the Protein Foods Group include beans and peas, processed soy products, and nuts and seeds. Meat and poultry choices should be lean or low-fat.</p>
+
+            </div>
+          </div>
+          <!-- /.card -->
+
+          <div class="card card-outline-secondary my-4">
+            <div class="card-header">
+              How much food from the Protein Foods Group is needed daily?
+            </div>
+            <div class="card-body">
+              <p>The amount of food from the Protein Foods Group you need to eat depends on age, sex, and level of physical activity. Most Americans eat enough food from this group, but need to make leaner and more varied selections of these foods. Recommended daily amounts are shown in the table below.</p>
+
+<div class="content">
+  <div class="container">
+    <table>
+
+
+  <thead>
+                                                          <tr>
+                                                              <th colspan="3" scope="col" style="text-align: justify;">Daily protein foods table</th>
+                                                          </tr>
+                                                          <tr>
+                                                              <th colspan="3" scope="col" style="text-align: center;">Daily recommendation*</th>
+                                                          </tr>
+                                                      </thead>
+                                                      <tbody>
+                                                          <tr>
+                                                              <td>
+                                                                  <strong>Children</strong>
+                                                              </td>
+                                                              <td>
+                                                                  2-3 years old<br>4-8 years old
+                                                              </td>
+                                                              <td>
+                                                                  2 ounce equivalents<br>4 &nbsp;ounce equivalents
+                                                              </td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td>
+                                                                  <strong>Girls</strong>
+                                                              </td>
+                                                              <td>
+                                                                  9-13 years old<br>14-18 years old
+                                                              </td>
+                                                              <td>
+                                                                  5 &nbsp;ounce equivalents<br>5 &nbsp;ounce equivalents
+                                                              </td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td>
+                                                                  <strong>Boys</strong>
+                                                              </td>
+                                                              <td>
+                                                                  9-13 years old<br>14-18 years old
+                                                              </td>
+                                                              <td>
+                                                                  5 &nbsp;ounce equivalents<br>6 ½ ounce equivalents
+                                                              </td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td>
+                                                                  <strong>Women</strong>
+                                                              </td>
+                                                              <td>
+                                                                  19-30 years old<br>
+                                                                  31-50 years old<br>51+ years old
+                                                              </td>
+                                                              <td>
+                                                                  5 ½ ounce equivalents<br>
+                                                                  5 &nbsp;ounce equivalents<br>5 &nbsp;ounce equivalents
+                                                              </td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td>
+                                                                  <strong>Men</strong>
+                                                              </td>
+                                                              <td>
+                                                                  <div>19-30 years old</div>
+                                                                  <div>31-50 years old</div>
+                                                                  <div>
+                                                                      51+ years old<span class="Apple-tab-span" style="white-space:pre"></span>
+                                                                  </div>
+                                                              </td>
+                                                              <td>
+                                                                  6 ½ ounce equivalents<br>
+                                                                  6 &nbsp;ounce equivalents<br>5 ½ ounce equivalents
+                                                              </td>
+                                                          </tr>
+                                                      </tbody>
+                                                  </table>
+                                              </div>
+                                              <div>
+                                                  <div>&nbsp;</div>
+                                                  <div>
+                                                      *These amounts are appropriate for individuals who get less than 30 minutes per &nbsp;<span style="font-size: 13.0080003738403px; line-height: 1.538em;">day of moderate physical activity, beyond normal daily activities. Those who are &nbsp;</span>
+                                                      <span style="font-size: 13.0080003738403px; line-height: 1.538em;">more physically active may be able to consume more while staying within calorie &nbsp;</span>
+                                                      <span style="font-size: 13.0080003738403px; line-height: 1.538em;">needs.</span>
+                                                      <br>
+                                                      <br>&nbsp;
+                                                  </div>
+                                              </div>
+                                              <h2>
+                                                  <a name="countsprotein"></a>
+                                                  What counts as an ounce-equivalent in the Protein Foods Group?
+                                              </h2>
+                                              <div>In general, 1 ounce of meat, poultry or fish, ¼ cup cooked beans, 1 egg, 1 tablespoon of peanut butter, or ½ ounce of nuts or seeds can be considered as 1 ounce-equivalent from the Protein Foods Group.</div>
+                                              <div>&nbsp;</div>
+                                              <div>
+                                                  This table below lists specific amounts that count as 1 ounce-equivalent in the Protein Foods Group towards your daily recommended intake.<br>
+
+                                              <div>&nbsp;</div>
+                                              <div height="100px" overflow-x="auto">&nbsp;</div>
+                                              <div style="overflow-x: auto;">
+                                                  <table border="1" cellpadding="1" cellspacing="1" class="collapsible collapsed" style="width: 95%;">
+                                                      <thead>
+                                                          <tr>
+                                                              <th colspan="3" scope="col" style="text-align: justify;">ounce-equivalent of protein foods table</th>
+                                                          </tr>
+                                                          <tr>
+                                                              <th scope="col">&nbsp;</th>
+                                                              <th scope="col">Amount that counts as 1 ounce-equivalent in the Protein Foods Group</th>
+                                                              <th scope="col">Common portions and ounce-equivalents</th>
+                                                          </tr>
+                                                      </thead>
+                                                      <tbody>
+                                                          <tr>
+                                                              <td>
+                                                                  <strong>Meats</strong>
+                                                              </td>
+                                                              <td>
+                                                                  <p>1 ounce cooked lean beef</p>
+                                                                  <p>
+                                                                      <span style="font-size: 0.923em; line-height: 1.538em;">1 ounce cooked lean pork or h</span>
+                                                                      <span style="font-size: 0.923em; line-height: 1.538em;">am</span>
+                                                                  </p>
+                                                              </td>
+                                                              <td>
+                                                                  <p>1 small steak (eye of round, filet) = 3 ½ to 4 ounce-equivalents</p>
+                                                                  <p>
+                                                                      <span style="font-size: 0.923em; line-height: 1.538em;">1 small lean hamburger = 2 to 3 ounce-equivalents</span>
+                                                                  </p>
+                                                              </td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td>
+                                                                  <strong>Poultry</strong>
+                                                              </td>
+                                                              <td>
+                                                                  <p>1 ounce cooked chicken or turkey, without skin</p>
+                                                                  <p>
+                                                                      <span style="font-size: 0.923em; line-height: 1.538em;">1 sandwich slice of turkey (4 ½" x 2 ½" x 1/8")</span>
+                                                                  </p>
+                                                              </td>
+                                                              <td>
+                                                                  <p>1 small chicken breast half = 3 ounce-equivalents</p>
+                                                                  <p>
+                                                                      <span style="font-size: 0.923em; line-height: 1.538em;">½ Cornish game hen = 4 ounce-equivalents</span>
+                                                                  </p>
+                                                              </td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td>
+                                                                  <strong>Seafood</strong>
+                                                              </td>
+                                                              <td>1 ounce cooked fish or shell fish</td>
+                                                              <td>
+                                                                  1 can of tuna, drained = 3 to 4 ounce-equivalents<br>
+                                                                  1 salmon steak = 4 to 6 ounce-equivalents<br>1 small trout = 3 ounce-equivalents
+                                                              </td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td>
+                                                                  <strong>Eggs</strong>
+                                                              </td>
+                                                              <td>1 egg</td>
+                                                              <td>
+                                                                  <p>
+                                                                      3 egg whites = 2 ounce-equivalents<br>
+                                                                      <span style="font-size: 0.923em; line-height: 1.538em;">3 egg yolks = 1 ounce-equivalent</span>
+                                                                  </p>
+                                                              </td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td style="vertical-align: top;">
+                                                                  <strong>Nuts and seeds</strong>
+                                                              </td>
+                                                              <td>
+                                                                  ½ ounce of nuts (12 almonds, 24 pistachios, 7 walnut halves)<br>
+                                                                  ½ ounce of seeds (pumpkin, sunflower, or squash seeds, hulled, roasted)<br>1 Tablespoon of peanut butter or almond butter
+                                                              </td>
+                                                              <td>1 ounce of nuts or seeds = 2 ounce-equivalents</td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td style="vertical-align: top;">
+                                                                  <strong>Beans and peas</strong>
+                                                              </td>
+                                                              <td>
+                                                                  <p>¼ cup of cooked beans (such as black, kidney, pinto, or white beans)</p>
+                                                                  <p>
+                                                                      ¼ cup of cooked peas (such as chickpeas, cowpeas, lentils, or split peas)<br>¼ cup of baked beans, refried beans
+                                                                  </p>
+                                                                  <p>
+                                                                      ¼ cup (about 2 ounces) of tofu<br>
+                                                                      1 oz. tempeh, cooked<br>
+                                                                      ¼ cup roasted soybeans 1 falafel patty (2 ¼", 4 oz)<br>2 Tablespoons hummus
+                                                                  </p>
+                                                              </td>
+                                                              <td>
+                                                                  <br>
+                                                                  1 cup split pea soup = 2 ounce-equivalents<br>
+                                                                  1 cup lentil soup = 2 ounce-equivalents<br>
+                                                                  1 cup bean soup = 2 ounce-equivalents<br>
+                                                                  <br>
+                                                                  <br>
+                                                                  1 soy or bean burger patty = 2 ounce-equivalents<br>&nbsp;
+                                                              </td>
+                                                          </tr>
+                                                      </tbody>
+                                                  </table>
+                                              </div>
+                                              <p>&nbsp;</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+
+
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <div id="footer">
+      <div class="row" >
+        <div class="col-12 col-md">
+          <img class="mb-2" src="logo diet.png" alt="" style="width:200px; height:200px;">
+          <small class="d-block mb-3 text-muted"></small>
+        </div>
+        <div class="col-6 col-md">
+          <h5><a href="about-us.html">About Us</a></h5>
+          <ul class="list-unstyled text-small">
+            <li>Our Background</li>
+            <li>Services</li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5><a href="MyDiet.html">MyDiet</a></h5>
+          <ul class="list-unstyled text-small">
+            <li>Food Pyramid Information</li>
+            <li>Tips Diet</li>
+            <li>Tips Living Style</li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5><a href="online-tool2.html">Online tools</a></h5>
+          <ul class="list-unstyled text-small">
+            <li>BMI Calculator</li>
+            <li>Applications Suggestions</li>
+            <li>Websites Suggestions</li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5><a href="popular.html">Popular Topics</a></h5>
+          <ul class="list-unstyled text-small">
+            <li>Dietary Planning</li>
+            <li>Super Food</li>
+            <li>Do's & Dont's</li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5><a href="ContactUs.html">Contact Us</a></h5>
+        </div>
+      </div>
+      <p class="float-right"><a href="#">Back to top</a></p>
+      <p class="card-text">Copyrighted © 2018 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </div>
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

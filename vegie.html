@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Vegetables</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="vegie.css" rel="stylesheet">
+    <style media="screen">
+    .logo{
+      display: block;
+      margin-right: auto;
+      height: 120px;
+      width: 120px;
+      padding-top: 0;
+      margin: 0;
+    }
+
+    .navbar{
+    background-color: #ccffcc !important;
+    }
+
+    .nav-item a{
+      color: #004d4d !important;
+    }
+
+    nav{
+      border-bottom-left-radius: 50px;
+    }
+    nav ul {
+      list-style: none;
+      text-align: center;
+    }
+
+    nav ul li a {
+      font-weight: 500;
+      font-size: 15px;
+      text-transform: uppercase;
+      /* margin: 0; */
+    }
+    nav ul li a,
+    nav ul li a:after,
+    nav ul li a:before {
+      transition: all .5s;
+    }
+    nav ul li a:hover {
+      color: #004d4d;
+    }
+
+    nav.stroke ul li a {
+      position: relative;
+    }
+    nav.stroke ul li a:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0%;
+      content: '.';
+      color: transparent;
+      background: #004d4d;
+      height: 1px;
+    }
+    nav.stroke ul li a:hover:after {
+      width: 100%;
+      height: 2px;
+    }
+
+    div#footer { width: 100%;
+      height: 350px;
+      /* background: #eee;  */
+      background: #ccffcc !important;
+      padding: 40px;
+      padding-bottom: 0 !important;}
+
+      .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+    </style>
+
+  </head>
+
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark stroke">
+        <a href="index.html"><img src="logo diet.png" alt="img" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="about-us.html">About Us <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <!-- <a class="nav-link" href="MyDiet.html">MyDiet</a> -->
+              <div class="dropdown">
+
+              <a href="MyDiet.html"  class=" nav-link dropbtn">MYDIET</a>
+              <div class="dropdown-content">
+              <a href="fruit.html">FRUITS</a>
+              <a href="vegie.html">VEGETABLES</a>
+              <a href="proteinnew.html">PROTEIN</a>
+              <a href="oil.html">OILS</a>
+              <a href="dairy.html">DAIRY</a>
+              <a href="grain.html">GRAINS</a>
+            </div>
+          </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="online_tool2.html">Online tools</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="popular.html">popular topics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ContactUs.html">contact us</a>
+            </li>
+
+          </ul>
+          <form class="form-inline mt-2 mt-md-0" >
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="background-color: #004d4d; border: 2px solid #004d4d; border-radius: 4px;color: white;">Search</button>
+          </form>
+        </div>
+      </nav>
+
+
+    </header>
+    <br><br><br><br>
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-3">
+          <h1 class="my-4">HEALTHY FOODS</h1>
+          <div class="list-group">
+            <a href="fruit.html" class="list-group-item active">FRUIT</a>
+            <a href="vegie.html" class="list-group-item">VEGETABLES</a>
+            <a href="proteinnew.html" class="list-group-item">PROTEIN</a>
+            <a href="oil.html" class="list-group-item">OILS</a>
+            <a href="dairy.html" class="list-group-item">DAIRY</a>
+              <a href="grain.html" class="list-group-item">GRAINS</a>
+          </div>
+        </div>
+        <!-- /.col-lg-3 -->
+
+        <div class="col-lg-9">
+
+          <div class="card mt-4">
+            <img class="card-img-top img-fluid" src="vegie.jpg" alt="">
+            <div class="card-body">
+              <h3 class="card-title">What foods are in the Vegetable Group?</h3>
+
+
+              <p class="card-text">Any vegetable or 100% vegetable juice counts as a member of the Vegetable Group. Vegetables may be raw or cooked; fresh, frozen, canned, or dried/dehydrated; and may be whole, cut-up, or mashed.
+
+              Based on their nutrient content, vegetables are organized into 5 subgroups: dark-green vegetables, starchy vegetables, red and orange vegetables, beans and peas, and other vegetables.
+ </p>
+
+            </div>
+          </div>
+          <!-- /.card -->
+
+          <div class="card card-outline-secondary my-4">
+            <div class="card-header">
+              How many vegetables are needed?
+
+
+            </div>
+            <div class="card-body">
+              <p>  The amount of vegetables you need to eat depends on your age, sex, and level of physical activity. Recommended total daily amounts and recommended weekly amounts from each vegetable subgroup are shown in the two tables below.</p>
+
+<div class="content">
+  <div class="container">
+    <table border="1" cellpadding="1" cellspacing="1" class="collapsible collapsed" style="width: 95%;">
+                                                        <thead>
+                                                            <tr>
+                                                                <th colspan="3" scope="col" style="text-align: justify;">Daily Vegetable Table</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td colspan="3" scope="col" style="text-align: left;">Daily Recommendation*</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th rowspan="2" scope="row">
+                                                                    <strong>Children</strong>
+                                                                </th>
+                                                                <td>2-3 years old</td>
+                                                                <td>1 cup</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>4-8 years old</td>
+                                                                <td>1 ½ cups</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th rowspan="2" scope="row">
+                                                                    <strong>Girls</strong>
+                                                                </th>
+                                                                <td>9-13 years old</td>
+                                                                <td>2 cups</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>14-18 years old</td>
+                                                                <td>2 ½ cups</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th rowspan="2" scope="row">
+                                                                    <strong>Boys</strong>
+                                                                </th>
+                                                                <td>9-13 years old</td>
+                                                                <td>2 ½ cups</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>14-18 years old</td>
+                                                                <td>3 cups</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th rowspan="3" scope="row">
+                                                                    <strong>Women</strong>
+                                                                </th>
+                                                                <td>19-30 years old</td>
+                                                                <td>2 ½ cups</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>31-50 years old</td>
+                                                                <td>2 ½ cups</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>51+ years old</td>
+                                                                <td>2 cups</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th rowspan="3" scope="row">
+                                                                    <strong>Men</strong>
+                                                                </th>
+                                                                <td>19-30 years old</td>
+                                                                <td>3 cups</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>31-50 years old</td>
+                                                                <td>3 cups</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>51+ years old</td>
+                                                                <td>2 ½ cups</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div>
+                                                    <div>&nbsp;</div>
+                                                    <div>*These amounts are appropriate for individuals who get less than 30 minutes per day of &nbsp;moderate physical activity, beyond normal daily activities. Those who are more physically &nbsp;active may be able to consume more while staying within calorie needs.</div>
+                                                    <div>
+                                                        <br>
+                                                        Vegetable subgroup recommendations are given as amounts to eat WEEKLY. It is not &nbsp;necessary to eat vegetables from each subgroup daily. However, over a week, try to &nbsp;consume the amounts listed from each subgroup as a way to reach your daily intake &nbsp;recommendation.<br>
+                                                        <br>Note: Click on the top row to expand the table. If you are on a mobile device, you may need to turn your phone to see the full table.
+                                                    </div>
+                                                    <div>&nbsp;</div>
+                                                    <div>
+                                                        <div class="swipe" style="color: grey">Swipe to see the full table.&nbsp;false</div>
+                                                        <div height="100px" overflow-x="auto">&nbsp;</div>
+                                                        <div style="overflow-x: auto;">
+                                                            <table border="1" cellpadding="1" cellspacing="1" class="collapsible collapsed" style="width: 95%;">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th colspan="7" scope="col">Weekly Vegetable Subgroup Table</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th colspan="2" scope="col">&nbsp;</th>
+                                                                        <th colspan="5" rowspan="1" scope="col">Amount per Week</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th colspan="2" scope="col">&nbsp;</th>
+                                                                        <th scope="col">Dark green vegetables</th>
+                                                                        <th scope="col">Red and orange vegetables</th>
+                                                                        <th scope="col">Beans and peas</th>
+                                                                        <th scope="col">Starchy vegetables</th>
+                                                                        <th scope="col">Other vegetables</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr></tr>
+                                                                    <tr>
+                                                                        <th rowspan="2" scope="row">
+                                                                            <strong>Children</strong>
+                                                                        </th>
+                                                                        <td>2-3 &nbsp;yrs &nbsp;old</td>
+                                                                        <td>½ cup</td>
+                                                                        <td>2 ½ cups</td>
+                                                                        <td>½ cup</td>
+                                                                        <td>2 cups</td>
+                                                                        <td>1 ½ cups</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>4-8 &nbsp;yrs &nbsp;old</td>
+                                                                        <td>1 cup</td>
+                                                                        <td>3 cups</td>
+                                                                        <td>½ cup</td>
+                                                                        <td>3 ½ cups</td>
+                                                                        <td>2 ½ cups</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th rowspan="2" scope="row">
+                                                                            <strong>Girls</strong>
+                                                                        </th>
+                                                                        <td>9-13 &nbsp;yrs &nbsp;old</td>
+                                                                        <td>1 ½ cups</td>
+                                                                        <td>4 cups</td>
+                                                                        <td>1 cup</td>
+                                                                        <td>4 cups</td>
+                                                                        <td>3 ½ cups</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>14-18 &nbsp;yrs &nbsp;old</td>
+                                                                        <td>1 ½ cups</td>
+                                                                        <td>5 ½ cups</td>
+                                                                        <td>1 ½ cups</td>
+                                                                        <td>5 cups</td>
+                                                                        <td>4 cups</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th rowspan="2" scope="row">
+                                                                            <strong>Boys</strong>
+                                                                        </th>
+                                                                        <td>9-13 &nbsp;yrs &nbsp;old</td>
+                                                                        <td>1 ½ cups</td>
+                                                                        <td>5 ½ cups</td>
+                                                                        <td>1 ½ cups</td>
+                                                                        <td>5 cups</td>
+                                                                        <td>4 cups</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>14-18 &nbsp;yrs &nbsp;old</td>
+                                                                        <td>2 cups</td>
+                                                                        <td>6 cups</td>
+                                                                        <td>2 cups</td>
+                                                                        <td>6 cups</td>
+                                                                        <td>5 cups</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th rowspan="3" scope="row">
+                                                                            <strong>Women</strong>
+                                                                        </th>
+                                                                        <td>19-30 &nbsp;yrs &nbsp;old</td>
+                                                                        <td>1 ½ cups</td>
+                                                                        <td>5 ½ cups</td>
+                                                                        <td>1 ½ cups</td>
+                                                                        <td>5 cups</td>
+                                                                        <td>4 cups</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>31-50 &nbsp;yrs &nbsp;old</td>
+                                                                        <td>1 ½ cups</td>
+                                                                        <td>5 ½ cups</td>
+                                                                        <td>1 ½ cups</td>
+                                                                        <td>5 cups</td>
+                                                                        <td>4 cups</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>51+&nbsp;yrs &nbsp;old</td>
+                                                                        <td>1 ½ cups</td>
+                                                                        <td>4 cups</td>
+                                                                        <td>1 cup</td>
+                                                                        <td>4 cups</td>
+                                                                        <td>3 ½ cups</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th rowspan="3" scope="row">
+                                                                            <strong>Men</strong>
+                                                                        </th>
+                                                                        <td>19-30 &nbsp;yrs &nbsp;old</td>
+                                                                        <td>2 cups</td>
+                                                                        <td>6 cups</td>
+                                                                        <td>2 cups</td>
+                                                                        <td>6 cups</td>
+                                                                        <td>5 cups</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>31-50 &nbsp;yrs &nbsp;old</td>
+                                                                        <td>2 cups</td>
+                                                                        <td>6 cups</td>
+                                                                        <td>2 cups</td>
+                                                                        <td>6 cups</td>
+                                                                        <td>5 cups</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>51+&nbsp;yrs &nbsp;old</td>
+                                                                        <td>1 ½ cups</td>
+                                                                        <td>5 ½ cups</td>
+                                                                        <td>1 ½ cups</td>
+                                                                        <td>5 cups</td>
+                                                                        <td>4 cups</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <h3>&nbsp;</h3>
+                                                    </div>
+                                                </div>
+                                                <h2>
+                                                    <a name="countsveg"></a>
+                                                    What counts as a cup of vegetables?
+                                                </h2>
+                                                <div>&nbsp;</div>
+                                                <div>
+                                                    In general, 1 cup of raw or cooked vegetables or vegetable juice, or 2 cups of raw leafy greens can be considered as 1 cup from the Vegetable Group. The table below lists specific amounts that count as 1 cup of vegetables (in some cases equivalents for ½ cup are also shown) towards your recommended intake.<br>
+                                                    <br>Note: Click on the top row to expand the table. If you are on a mobile device, you may need to turn your phone to see the full table.
+                                                </div>
+                                                <div>&nbsp;</div>
+                                                <div>
+                                                    <div class="swipe" style="color: grey">Swipe to see the full table.&nbsp;false</div>
+                                                    <div height="100px" overflow-x="auto">&nbsp;</div>
+                                                    <div style="overflow-x: auto;">
+                                                        <table border="1" cellpadding="1" cellspacing="1" class="collapsible collapsed" style="width: 95%;">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th colspan="4" scope="col">Cup of Vegetable Table</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th colspan="2" scope="col">&nbsp;</th>
+                                                                    <th scope="col">Amount that counts as 1 cup of vegetable</th>
+                                                                    <th scope="col">Amount that counts as 1/2 cup of vegetables</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr></tr>
+                                                                <tr>
+                                                                    <th rowspan="4" scope="row">
+                                                                        <strong>Dark Green Vegetables</strong>
+                                                                    </th>
+                                                                    <td>Broccoli</td>
+                                                                    <td>
+                                                                        <p>1 cup, chopped or florets</p>
+                                                                        <p>3 spears 5" long raw or cooked</p>
+                                                                    </td>
+                                                                    <td>&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Greens (collards, mustard greens, turnip greens, kale)</td>
+                                                                    <td>1 cup, cooked</td>
+                                                                    <td>&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Spinach</td>
+                                                                    <td>
+                                                                        <p>1 cup, cooked</p>
+                                                                        <p>2 cups, raw</p>
+                                                                    </td>
+                                                                    <td>
+                                                                        <p>1 cup, raw</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Raw leafy greens: Spinach, romaine, watercress, dark green leafy lettuce, endive, escarole</td>
+                                                                    <td>
+                                                                        <div>2 cups, raw</div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div>1 cup, raw</div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th rowspan="7" scope="row">
+                                                                        <strong>Red and Orange Vegetables</strong>
+                                                                    </th>
+                                                                    <td>Carrots</td>
+                                                                    <td>
+                                                                        1 cup, strips, slices, or chopped, raw or cooked<br>
+                                                                        2 medium<br>1 cup baby carrots (about 12)
+                                                                    </td>
+                                                                    <td>
+                                                                        1 medium carrot<br>About 6 baby carrots
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Pumpkin</td>
+                                                                    <td>1 cup, mashed, cooked</td>
+                                                                    <td>&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Red peppers</td>
+                                                                    <td>
+                                                                        1 cup, chopped, raw, or cooked<br>1 large pepper (3" diameter, 3 3/4" long)
+                                                                    </td>
+                                                                    <td>1 small pepper</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Tomatoes</td>
+                                                                    <td>
+                                                                        1 large raw whole (3")<br>1 cup, chopped or sliced, raw, canned, or cooked
+                                                                    </td>
+                                                                    <td>
+                                                                        1 small raw whole (2 1/4" diameter)<br>1 medium canned
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Tomato juice</td>
+                                                                    <td>1 cup</td>
+                                                                    <td>½ cup</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Sweet potato</td>
+                                                                    <td>
+                                                                        1 large baked (2 ¼" or more diameter)<br>1 cup, sliced or mashed, cooked
+                                                                    </td>
+                                                                    <td>&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Winter squash (acorn, butternut, hubbard)</td>
+                                                                    <td>1 cup, cubed, cooked</td>
+                                                                    <td>½ acorn squash, baked = ¾ cup</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>
+                                                                        <strong>Beans and Peas</strong>
+                                                                    </th>
+                                                                    <td>
+                                                                        Dry beans and peas (such as black, garbanzo, kidney, pinto, or soy beans, or black-eyed peas or split peas)<br>&nbsp;
+                                                                    </td>
+                                                                    <td>1 cup, whole or mashed, cooked</td>
+                                                                    <td>&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th rowspan="3" scope="row">
+                                                                        <strong>Starchy Vegetables</strong>
+                                                                    </th>
+                                                                    <td>Corn, yellow or white</td>
+                                                                    <td>
+                                                                        1 cup<br>1 large ear (8" to 9" long)
+                                                                    </td>
+                                                                    <td>
+                                                                        <br>1 small ear (about 6" long)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Green peas</td>
+                                                                    <td>1 cup</td>
+                                                                    <td>&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>White potatoes</td>
+                                                                    <td>
+                                                                        1 cup, diced, mashed<br>1 medium boiled or baked potato (2 ½" to 3" diameter)
+                                                                    </td>
+                                                                    <td>&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th rowspan="11" scope="row">
+                                                                        <strong>Other Vegetables</strong>
+                                                                    </th>
+                                                                    <td>Bean sprouts</td>
+                                                                    <td>1 cup, cooked</td>
+                                                                    <td>&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Cabbage, green</td>
+                                                                    <td>1 cup, chopped or shredded raw or cooked</td>
+                                                                    <td>&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Cauliflower</td>
+                                                                    <td>1 cup, pieces or florets raw or cooked</td>
+                                                                    <td>&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Celery</td>
+                                                                    <td>
+                                                                        1 cup, diced or sliced, raw or cooked<br>2 large stalks (11" to 12" long)
+                                                                    </td>
+                                                                    <td>
+                                                                        <br>1 large stalk (11" to 12" long)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Cucumbers</td>
+                                                                    <td>1 cup, raw, sliced or chopped</td>
+                                                                    <td>&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Green or wax beans</td>
+                                                                    <td>1 cup, cooked</td>
+                                                                    <td>&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Green peppers</td>
+                                                                    <td>
+                                                                        1 cup, chopped, raw or cooked<br>1 large pepper (3" diameter, 3 ¾" long)
+                                                                    </td>
+                                                                    <td>
+                                                                        <br>1 small pepper
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Lettuce, iceberg or head</td>
+                                                                    <td>2 cups, raw, shredded or chopped</td>
+                                                                    <td>1 cup, raw, shredded or chopped</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Mushrooms</td>
+                                                                    <td>1 cup, raw or cooked</td>
+                                                                    <td>&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Onions</td>
+                                                                    <td>1 cup, chopped, raw or cooked</td>
+                                                                    <td>&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Summer squash or zucchini</td>
+                                                                    <td>1 cup, cooked, sliced or diced</td>
+                                                                    <td>&nbsp;</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <div id="footer">
+      <div class="row" >
+        <div class="col-12 col-md">
+          <img class="mb-2" src="logo diet.png" alt="" style="width:200px; height:200px;">
+          <small class="d-block mb-3 text-muted"></small>
+        </div>
+        <div class="col-6 col-md">
+          <h5><a href="about-us.html">About Us</a></h5>
+          <ul class="list-unstyled text-small">
+            <li>Our Background</li>
+            <li>Services</li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5><a href="MyDiet.html">MyDiet</a></h5>
+          <ul class="list-unstyled text-small">
+            <li>Food Pyramid Information</li>
+            <li>Tips Diet</li>
+            <li>Tips Living Style</li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5><a href="online-tool2.html">Online tools</a></h5>
+          <ul class="list-unstyled text-small">
+            <li>BMI Calculator</li>
+            <li>Applications Suggestions</li>
+            <li>Websites Suggestions</li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5><a href="popular.html">Popular Topics</a></h5>
+          <ul class="list-unstyled text-small">
+            <li>Dietary Planning</li>
+            <li>Super Food</li>
+            <li>Do's & Dont's</li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5><a href="ContactUs.html">Contact Us</a></h5>
+        </div>
+      </div>
+      <p class="float-right"><a href="#">Back to top</a></p>
+      <p class="card-text">Copyrighted © 2018 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </div>
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

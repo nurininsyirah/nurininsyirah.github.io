@@ -86,6 +86,28 @@
           background: #ccffcc !important;
           padding: 40px;
           padding-bottom: 0 !important;}
+
+          .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {background-color: #ddd;}
+
+    .dropdown:hover .dropdown-content {display: block;}
+
+    .dropdown:hover .dropbtn {background-color: #3e8e41;}
         </style>
   </head>
 
@@ -104,7 +126,19 @@
               <a class="nav-link" href="about-us.html">About Us <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="MyDiet.html">MyDiet</a>
+              <!-- <a class="nav-link" href="MyDiet.html">MyDiet</a> -->
+              <div class="dropdown">
+
+              <a href="MyDiet.html"  class=" nav-link dropbtn">MYDIET</a>
+              <div class="dropdown-content">
+              <a href="fruit.html">FRUITS</a>
+              <a href="vegie.html">VEGETABLES</a>
+              <a href="proteinnew.html">PROTEIN</a>
+              <a href="oil.html">OILS</a>
+              <a href="dairy.html">DAIRY</a>
+              <a href="grain.html">GRAINS</a>
+            </div>
+          </div>
             </li>
             <li class="nav-item">
               <a class="nav-link " href="online_tool2.html">Online tools</a>
@@ -115,6 +149,7 @@
             <li class="nav-item">
               <a class="nav-link" href="ContactUs.html">contact us</a>
             </li>
+
           </ul>
           <form class="form-inline mt-2 mt-md-0" >
             <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
