@@ -15,12 +15,46 @@
     <link type="text/css" media="all" href="https://www.dinno.com.my/wp-content/cache/autoptimize/css/autoptimize_cf2cad67c4580226cb43423647517ad5.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://ws.sharethis.com/button/css/buttons-secure.css">
     <link rel="stylesheet" href="mydiet.css">
+    <script type="text/javascript">
+
+           function computeBMI() {
+               // user inputs
+               var height = Number(document.getElementById("height").value);
+               var heightunits = document.getElementById("heightunits").value;
+               var weight = Number(document.getElementById("weight").value);
+               var weightunits = document.getElementById("weightunits").value;
+
+
+               //Convert all units to metric
+               if (heightunits == "inches") height /= 39.3700787;
+               if (weightunits == "lb") weight /= 2.20462;
+
+               //Perform calculation
+
+               //        var BMI = weight /Math.pow(height, 2)*10000;
+               var BMI = Math.round(weight / Math.pow(height, 2) * 10000);
+
+               //Display result of calculation
+               document.getElementById("output").innerText = Math.round(BMI * 100) / 100;
+
+               var output = Math.round(BMI * 100) / 100
+               if (output < 18.5)
+                   document.getElementById("comment").innerText = "Underweight";
+               else if (output >= 18.5 && output <= 25)
+                   document.getElementById("comment").innerText = "Normal";
+               else if (output >= 25 && output <= 30)
+                   document.getElementById("comment").innerText = "Obese";
+               else if (output > 30)
+                   document.getElementById("comment").innerText = "Overweight";
+               // document.getElementById("answer").value = output;
+           }
+       </script>`enter code here`
   </head>
 
   <body class="html not-front not-logged-in page-node page-node- page-node-6483313 node-type-basic-page section-what-healthy-eating-style">
     <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark stroke">
-        <a href="index.html"><img src="diet on-01.png" alt="img" class="logo"></a>
+        <a href="index.html"><img src="logo diet.png" alt="img" class="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -39,7 +73,7 @@
               <a class="nav-link" href="popular.html">popular topics</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">contact us</a>
+              <a class="nav-link" href="ContactUs.html">contact us</a>
             </li>
           </ul>
           <form class="form-inline mt-2 mt-md-0" >
@@ -180,11 +214,6 @@
                 <p><img src="https://static1.squarespace.com/static/58aa2d673a0411800f15b7f5/t/58bee3d7d482e92a43456fdf/1488576409490/?format=750w" alt="" style="width: 24px; height: 24px;">  When You Feel Like Quitting, Think About Why You Started"</p>
               </div>
             </li>
-            <li>
-              <div class="post-title">
-                <p><img src="https://static1.squarespace.com/static/58aa2d673a0411800f15b7f5/t/58bee3d7d482e92a43456fdf/1488576409490/?format=750w" alt="" style="width: 24px; height: 24px;"> If You Aren't Going All The Way, Why Go At All?"</p>
-              </div>
-            </li>
           </ul>
         </li>
         <li id="categories-2" class="widget widget_categories">
@@ -195,11 +224,22 @@
           </h4>
           <ul>
             <li class="cat-item cat-item-15 post-title">
-              <strong>
-                <strong>
-                  <a href="#"> <img src="http://freeflaticons.com/wp-content/uploads/2014/09/calculator-1410148967n48gk.png" alt=""> </a>
-                </strong>
-              </strong>
+       <p style="color: yellow;">Enter your height: <input style="width:180px;" type="text" id="height"/>
+           <select type="multiple" id="heightunits">
+               <option value="metres" selected="selected">metres</option>
+               <option value="inches">inches</option>
+           </select>
+            </p>
+       <p style="color: yellow;">Enter your weight: <input style="width:180px;" type="text" id="weight"/>
+           <select type="multiple" id="weightunits">
+               <option value="kg" selected="selected">kilograms</option>
+               <option value="lb">pounds</option>
+           </select>
+       </p>
+       <input type="submit" value="computeBMI" onclick="computeBMI();">
+       <p style="color: yellow;">Your BMI is: <span id="output">?</span></p>
+
+       <p style="color: yellow;">This means you are: <span id="comment"> ?</span> </p>
             </li>
           </ul>
         </li>

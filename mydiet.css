@@ -1,8 +1,8 @@
 .logo{
   display: block;
   margin-right: auto;
-  height: 80px;
-  width: 200px;
+  height: 120px;
+  width: 120px;
   padding-top: 0;
   margin: 0;
 }
@@ -98,7 +98,7 @@ div#social-float {
   left: 80%;
   width: 250px;
   position: fixed;
-  bottom: 20px;
+  bottom: 5px;
   background: rgba(0,0,0,0.5);
   list-style-type: none;
   padding-right: 10px;
@@ -129,7 +129,7 @@ div#social-float {
     float: left;
     width: 200px;
     /* position: fixed; */
-    bottom: 20px;
+    bottom: 10px;
     background: rgba(0, 77, 77,1);
     list-style-type: none;
     border-radius: 20px;
