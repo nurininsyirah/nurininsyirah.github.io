@@ -2,44 +2,67 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
-body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);}
+
+a,
+a:focus,
+a:hover {
   color: #5a5a5a;
 }
-
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  margin-bottom: 4rem;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
+body {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  color: #5a5a5a;
+  background-image: url("WhatsApp Image 2018-12-17 at 09.57.08.jpeg");
 }
 
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 32rem;
-  background-color: #777;
-}
-.carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 32rem;
+.jumbotron {
+    padding: 6rem 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-image: url("food1.jpg");
+    background-size: 100%;
+    margin:;
+    font-size: 40px;
+    color: white;
+    style:
 }
 
+.display-3{
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
 
+.putih{
+  background-color: white;
+}
+
+.innerCover
+{
+  height: 100%;
+  text-align: center;
+  background-color: #333;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.row{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
+
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
@@ -66,7 +89,6 @@ body {
   line-height: 1;
   letter-spacing: -.05rem;
 }
-
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */

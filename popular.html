@@ -1,238 +1,269 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
 
-    <title>**Popular Topics**</title>
-    <link rel="stylesheet" href="popular.css">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <title>Popular Topics</title>
 
-<style media="screen">
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet">
 
-.logo{
-  display: block;
-  margin-right: auto;
-  height: 120px;
-  width: 120px;
-  padding-top: 0;
-  margin: 0;
-}
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+    <style media="screen">
+    .logo{
+      display: block;
+      margin-right: auto;
+      height: 120px;
+      width: 120px;
+      padding-top: 0;
+      margin: 0;
+    }
 
-.navbar{
-background-color: #ccffcc !important;
-}
+    .navbar{
+    background-color: #ccffcc !important;
+    }
 
-.nav-item a{
-  color: #004d4d !important;
-}
+    .nav-item a{
+      color: #004d4d !important;
+    }
 
-nav{
-  border-bottom-left-radius: 50px;
-}
-nav ul {
-  list-style: none;
-  text-align: center;
-}
+    nav{
+      border-bottom-left-radius: 50px;
+    }
+    nav ul {
+      list-style: none;
+      text-align: center;
+    }
 
-nav ul li a {
-  font-weight: 500;
-  font-size: 15px;
-  text-transform: uppercase;
-  /* margin: 0; */
-}
-nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
-  transition: all .5s;
-}
-nav ul li a:hover {
-  color: #004d4d;
-}
+    nav ul li a {
+      font-weight: 500;
+      font-size: 15px;
+      text-transform: uppercase;
+      /* margin: 0; */
+    }
+    nav ul li a,
+    nav ul li a:after,
+    nav ul li a:before {
+      transition: all .5s;
+    }
+    nav ul li a:hover {
+      color: #004d4d;
+    }
 
-nav.stroke ul li a {
-  position: relative;
-}
-nav.stroke ul li a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: #004d4d;
-  height: 1px;
-}
-nav.stroke ul li a:hover:after {
-  width: 100%;
-  height: 2px;
-}
+    nav.stroke ul li a {
+      position: relative;
+    }
+    nav.stroke ul li a:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0%;
+      content: '.';
+      color: transparent;
+      background: #004d4d;
+      height: 1px;
+    }
+    nav.stroke ul li a:hover:after {
+      width: 100%;
+      height: 2px;
+    }
 
-div#footer { width: 100%;
-  height: 350px;
-  /* background: #eee;  */
-  background: #ccffcc !important;
-  padding: 40px;
-  padding-bottom: 0 !important;}
-</style>
-
-</head>
-<body>
-
-<header>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark stroke">
-    <a href="index.html"><img src="logo diet.png" alt="img" class="logo"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="about-us.html">About Us <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="MyDiet.html">MyDiet</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="online_tool2.html">Online tools</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="popular.html">popular topics</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="ContactUs.html">contact us</a>
-        </li>
-      </ul>
-      <form class="form-inline mt-2 mt-md-0" >
-        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="background-color: #004d4d; border: 2px solid #004d4d; border-radius: 4px;color: white;">Search</button>
-      </form>
-    </div>
-  </nav>
-</header>
-</style>
+    div#footer { width: 100%;
+      height: 350px;
+      /* background: #eee;  */
+      background: #ccffcc !important;
+      padding: 40px;
+      padding-bottom: 0 !important;}
+    </style>
   </head>
 
-        <div id="kepala">
-          <h2 class="main-title">
-            <span>Popular Topics</span>
-          </h2>
-          <div class="sub-title">Be You At Your Best!</div>
-        </div>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark stroke">
+        <a href="index.html"><img src="logo diet.png" alt="img" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark stroke">
+          <a href="index.html"><img src="logo diet.png" alt="img" class="logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="about-us.html">About Us <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="MyDiet.html">MyDiet</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="online_tool2.html">Online tools</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="popular.html">popular topics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ContactUs.html">contact us</a>
+              </li>
+            </ul>
+            <form class="form-inline mt-2 mt-md-0" >
+              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="background-color: #004d4d; border: 2px solid #004d4d; border-radius: 4px;color: white;">Search</button>
+            </form>
+          </div>
+        </nav>
+    </header>
 
-    <div id="first">
-      <div class="quote">
-        <p> "Take Care of Your Body,It's The Only Place You Have to Live In"</p>
-      </div>
-      <div class="Planning">
-        <h2>Dietary Planning</h2>
-        <div>
-          <button type="button" class="button" data-toggle="collapse" data-target="#demo">Click Me!</button>
-          <div id="demo" class="collapse">
-          <h4><a href="https://www.nutrition.org.uk/healthyliving/healthydiet/healthybalanceddiet.html">A Healthy Diet </a>
-          <h4><a href="http://www.cyh.com/HealthTopics/HealthTopicDetails.aspx?p=114&np=302&id=1640">Feeding Children</a>
-          <h4><a href="https://www.nutrition.org.uk/nutritionscience/life/adults.htm">Diet in Adult Life</a>
-          <h4><a href="https://www.aging.com/elderly-nutrition-101-10-foods-to-keep-you-healthy/">The Elderly</a>
+
+    <div class="jumbotron">
+      <div class="display-3"><h1>Popular Topics</h1 style="font-weight: 600;"></div>
+      <p></p>
+      <h5 style="font-weight:300;">Healthy Eating/ Diet Tips & Nutrition</h5>
+
+
+  </div>
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="container marketing" style="background-color: white;">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="download.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>Dietary Planning</h2>
+            <p>Dietary planning involves quantitative and qualitative considerations.<strong>Do you know, dietary planning differ across the lifespan?</strong> Nutritions through the life cycle from childhood to the elderly years remain critical throughout a person's life and influence overall health and wellness. </p>
+            <p><a class="btn btn-secondary" href="https://2012books.lardbucket.org/books/an-introduction-to-nutrition/s17-nutrition-through-the-life-cyc.html" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img src="images.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>Super Food</h2>
+            <p>Superfoods are foods — mostly plant-based but also some fish and dairy — thought to be nutritionally dense and thus good for one's health.Consuming foods that are packed with nutrients (as many so-called superfoods are) is certainly a good idea.<strong> Mind that the key to a healthy diet is to consume a variety of nutritious foods in the right quantities.</strong> </p>
+            <p><a class="btn btn-secondary" href="https://www.livescience.com/34693-superfoods.html" role="button">View Details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="images (5).jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Do's & Dont's</h2>
+            <p>Instead of three really big meals, you should eat several small meals every two hours.<strong>Remember to drink plenty of water throughout the day!</strong> Don't expect to meet your weight-loss goal in just a few weeks. It's not healthy to lose weight rapidly, and it will be back before you know it.</p>
+            <p><a class="btn btn-secondary" href="https://timesofindia.indiatimes.com/life-style/health-fitness/weight-loss/Dos-and-donts-for-dieting/articleshow/5555761.cms" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Know your <strong><a href="calories.html">calories</a></strong> intake. <span class="text-muted">It's crucial.</span></h2>
+            <p class="lead">Calories are essential for human health. The key is consuming the right amount. Everyone requires different amounts of energy each day, depending on age, sex, size, and activity level.<strong>What are actually the meaning of calories?</strong></p>
+          </div>
+          <div class="col-md-5">
+            <a href="calories.html">
+              <img class="featurette-image img-fluid mx-auto" img src="05-resep_ayam_goreng_bumbu_kuning_-_cara_membuat - Copy.jpg" alt="alternate text"> </a>
           </div>
         </div>
-      </div>
-    </div>
 
+        <hr class="featurette-divider">
 
-
-    <div id="second">
-      <div class="quote">
-        <p> "Skip The Diet, Just Eat Healthy"</p>
-      </div>
-      <div class="Products">
-        <h2>Food & Food Products</h2>
-        <div>
-          <button type="button" class="button" data-toggle="collapse" data-target="#demog">Click Me!</button>
-          <div id="demog" class="collapse">
-          <h4><a href="http://www.sahealth.sa.gov.au/wps/wcm/connect/public+content/sa+health+internet/protecting+public+health/food+standards/composition+and+labelling+of+food">Foods : Their Composition, Labelling, Storage & Choice</a>
-          <h4><a href="https://www.dearnestle.com.my/recipes?gclid=CjwKCAjw6-_eBRBXEiwA-5zHaZXqDuyXOkN4KJIzO3m3m9lAEwdm5bu8it-Jo-bq91MZ0HNF6Z49bhoCFoUQAvD_BwE">Meals & Recipes</a>
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Five <strong><a href="exercise.html">easy</a></strong> exercises. <span class="text-muted">You love simplicity, don't you? </span></h2>
+            <p class="lead">When we talk about exercise, we nearly always refer to physical exercise. Exercise is the physical exertion of the body - making the body do a physical activity which results in a level of physical fitness and mental health. In other words, exercise aims to <strong>maintain or enhance</strong> our physical fitness and general health.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+              <a href="exercise.html">
+            <img class="featurette-image img-fluid mx-auto" img src="running-shoes-16-gear-patrol-02-feature.jpg"></a>
           </div>
         </div>
-      </div>
-    </div>
 
+        <hr class="featurette-divider">
 
-    <div id="third">
-      <div class="quote">
-        <p> "Food is an Important Part of a Balanced Diet"</p>
-      </div>
-      <div class="Diseases">
-        <h2> Diets & Diseases</h2>
-        <div>
-          <button type="button" class="button" data-toggle="collapse" data-target="#demogra">Click Me!</button>
-          <div id="demogra" class="collapse">
-          <h4><a href="https://www.dietvsdisease.org/">Causes & Prevention</a>
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Unhealthy diet<strong> <a href="misunderstanding.html">trends.</a></strong><span class="text-muted"> Modern Trends on Diet.</span></h2>
+            <p class="lead">The modern diet is the main reason why people all over the world are fatter and sicker than ever before.
+
+Everywhere modern processed foods go, chronic diseases like obesity, type 2 diabetes and heart disease soon follow.Of course, there are many things that can contribute to these health problems, but changes in the diet are the most important factor.</p>
+          </div>
+          <div class="col-md-5">
+              <a href="misunderstanding.html">
+            <img class="featurette-image img-fluid mx-auto" img src="questMark.jpg" alt="Generic placeholder image"></a>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div id="forth">
-      <div class="quote">
-        <p> "Don't Forget, You are What You Eat!"</p>
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+      </div><!-- /.container -->
+
+      <!-- FOOTER -->
+      <div id="footer">
+        <div class="row" >
+          <div class="col-12 col-md">
+            <img class="mb-2" src="logo diet.png" alt="" style="width:200px; height:200px;">
+            <small class="d-block mb-3 text-muted"></small>
+          </div>
+          <div class="col-6 col-md">
+            <h5><a href="about-us.html">About Us</a></h5>
+            <ul class="list-unstyled text-small">
+              <li>Our Background</li>
+              <li>Services</li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5><a href="MyDiet.html">MyDiet</a></h5>
+            <ul class="list-unstyled text-small">
+              <li>Food Pyramid Information</li>
+              <li>Tips Diet</li>
+              <li>Tips Living Style</li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5><a href="online-tool2.html">Online tools</a></h5>
+            <ul class="list-unstyled text-small">
+              <li>BMI Calculator</li>
+              <li>Applications Suggestions</li>
+              <li>Websites Suggestions</li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5><a href="popular.html">Popular Topics</a></h5>
+            <ul class="list-unstyled text-small">
+              <li>Dietary Planning</li>
+              <li>Super Food</li>
+              <li>Do's & Dont's</li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5><a href="ContactUs.html">Contact Us</a></h5>
+          </div>
+        </div>
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p class="card-text">Copyrighted © 2018 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
       </div>
 
-      <div class="Misunderstanding">
-       <h2>Misunderstanding on Diets</h2>
-       <div>
-         <button type="button" class="button" data-toggle="collapse" data-target="#demograph">Click Me!</button>
-         <div id="demograph" class="collapse">
-         <h4><a href="https://www.omicsonline.org/open-access/modern-diet-and-its-impact-on-human-health-2155-9600-1000430.php?aid=63494">Today's Trend</a>
-         <h4><a href="https://www.bodybuilding.com/content/a-beginners-guide-to-workout-nutrition-before-during-and-after-training.html">Workout Nutrition?</a>
-         </div>
-       </div>
-      </div>
-   </div>
-****
-   <div id="footer">
-     <div class="row">
-       <div class="col-12 col-md">
-         <img class="mb-2" src="diet on-01.png" alt="" style="width:400px; height:200px;">
-         <small class="d-block mb-3 text-muted"></small>
-       </div>
-       <div class="col-6 col-md">
-         <h5>About Us</h5>
-         <ul class="list-unstyled text-small">
-           <li><a class="text-muted" href="#">Our Background</a></li>
-           <li><a class="text-muted" href="#">Services</a></li>
-         </ul>
-       </div>
-       <div class="col-6 col-md">
-         <h5>MyDiet</h5>
-         <ul class="list-unstyled text-small">
-           <li><a class="text-muted" href="#">Food Pyramid Information</a></li>
-           <li><a class="text-muted" href="#">Tips Diet</a></li>
-           <li><a class="text-muted" href="#">Tips Living Style</a></li>
-         </ul>
-       </div>
-       <div class="col-6 col-md">
-         <h5>Online tools</h5>
-         <ul class="list-unstyled text-small">
-           <li><a class="text-muted" href="#">BMI Calculator</a></li>
-           <li><a class="text-muted" href="#">Applications Suggestions</a></li>
-           <li><a class="text-muted" href="#">Websites Suggestions</a></li>
-         </ul>
-       </div>
-       <div class="col-6 col-md">
-         <h5>Popular Topics</h5>
-       </div>
-       <div class="col-6 col-md">
-         <h5>Contact Us</h5>
-       </div>
-     </div>
-     <p class="float-right"><a href="#">Back to top</a></p>
-     <p class="card-text">Copyrighted © 2018 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-   </div>
- </body>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
+    <script src="https://getbootstrap.com/docs/4.1/dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/holder.min.js"></script>
+  </body>
 </html>
